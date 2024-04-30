@@ -44,3 +44,8 @@ replay_pid*
 
 #### JDK ENVIRONMENT
 **/.sdkmanrc
+
+##### PROJETO ContaBancaria
+**/**/.vscode
+**/**/bin
+**/**/lib
