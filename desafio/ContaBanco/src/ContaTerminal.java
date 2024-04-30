@@ -26,6 +26,7 @@ public class ContaTerminal {
                         .concat(" já está disponível para saque");
 
         System.out.println(mensagem);
+        input.close();
 
     }   
 }
