@@ -1,0 +1,39 @@
+ClassDiagram [frame=true framecolor=steelblue label="Desafio IPhone"] {
+ 
+ interface MusicPlayer{
+    public pausar():void
+    public selecionarMusica(dirMusica:String):void
+    public tocar():void
+ }
+
+ interface Phone{
+    public atender():void
+    public iniciarCorrerioVoz():void
+    public ligar(numero:String):void
+    public desligar():void
+ }
+
+  interface Browser{
+    public atualizarPagina(url:String):void
+    public exibirPagina(url:String):void
+    public adicionarNovaAba():void
+ }
+
+  
+ class Iphone {
+    private ime:String
+    private width:Integer
+    private height:Integer
+    public on():void
+    public off():void
+ }
+
+ Iphone -r-> MusicPlayer
+ Iphone -r-> Phone
+ Iphone -r-> Browser
+
+align {
+  MusicPlayer
+  Iphone
+ }
+}
